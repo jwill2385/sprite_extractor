@@ -73,7 +73,7 @@ def isolate_img(image, box, rect):
     return warped
 
 #This file will extract tiles from uneven sprite sheet
-image = cv2.imread('/home/cvdarbeloff/Documents/gbasonic_cream.png') #Load image
+image = cv2.imread('/home/cvdarbeloff/Documents/gbasaamy.png') #Load image
 save_path = '/home/cvdarbeloff/Documents/gan_pictures' #save photos to this folder
 img_counter = 0
 
@@ -102,7 +102,7 @@ for i, cnt in enumerate(contours):
             # cv2.imshow('isolate', iso_img)
             # cv2.waitKey(0)
             #adjust name of each image we want to store
-            img_name = "cream_GBA_SonicBattle_{}.jpg".format(img_counter)
+            img_name = "amy_GBA_SonicAdvance{}.jpg".format(img_counter)
             # store image in correct folder
             currnet_pic = cv2.imwrite(os.path.join(save_path, img_name), iso_img)
             print("{} written".format(img_name))
